@@ -5,6 +5,7 @@ Computer Vision and Deep Learning tutorials for the course Foundation of Digital
 `git clone https://github.com/dhlab-epfl/FDH_Tutorials_CV_DL.git`
 
 ## Install the environment
+* Install Anaconda with Python 3.* : https://www.anaconda.com/download/
 * Install from yml file : `conda env create -f environment.yml`
 * Activate the environment : `source activate FDH_tutorial_CV_DL`
 * Once you're done with the exercice : `source deactivate`
