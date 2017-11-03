@@ -1,8 +1,9 @@
 # FDH_Tutorials_CV_DL
 Computer Vision and Deep Learning tutorials for the course Foundation of Digital Humanities (Fall 2017)
 
-## Clone the repository 
-`git clone https://github.com/dhlab-epfl/FDH_Tutorials_CV_DL.git`
+## Clone or download the repository 
+* Clone : `git clone https://github.com/dhlab-epfl/FDH_Tutorials_CV_DL.git`
+* or download the zip
 
 ## Install the environment
 * Install Anaconda with Python 3.* : https://www.anaconda.com/download/
