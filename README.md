@@ -1,5 +1,5 @@
-# FDH_Tutorials_CV_DL
-Computer Vision and Deep Learning tutorials for the course Foundation of Digital Humanities (Fall 2017)
+# FDH Computer Vision and Deep Learning Tutorial
+Computer Vision and Deep Learning tutorials for the course Foundation of Digital Humanities (Fall 2018)
 
 ## Clone or download the repository 
 * Clone : `git clone https://github.com/dhlab-epfl/FDH_Tutorials_CV_DL.git`
