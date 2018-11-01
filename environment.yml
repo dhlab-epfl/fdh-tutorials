@@ -1,6 +1,7 @@
 name: FDH_tutorial_CV_DL
 channels:
   - defaults
+  - menpo
 dependencies:
   - imageio=2.4
   - jupyter=1.0
@@ -14,5 +15,4 @@ dependencies:
   - scipy=1.1
   - tensorflow=1.10
   - tqdm=4.26
-  - pip:
-    - dlib
+  - dlib
