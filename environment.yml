@@ -1,17 +1,24 @@
-name: fdh_tutorial_cv_dl
+name: fdh_tutorial
 channels:
   - defaults
-  - menpo
 dependencies:
   - imageio=2.4
   - jupyter=1.0
   - matplotlib=3.0
-  - numpy=1.15
+  - numpy=1.17
+  - pandas=0.25
   - pillow=5.2
-  - python=3.5
+  - pip=19.3
+  - python=3.7
   - scikit-image=0.14
-  - scikit-learn=0.20
+  - scikit-learn=0.21
   - scipy=1.1
   - tensorflow=1.13
   - tqdm=4.36
-  - dlib=19.9
+  - pip:
+    - dlib==19.18
+    - sklearn-crfsuite==0.3.6
+    - spacy==2.2.2
+    - xlrd==1.2.0
+    - xlsxwriter==1.2.2
+
