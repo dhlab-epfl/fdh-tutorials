@@ -1,7 +1,7 @@
 # FDH Computer Vision and Deep Learning Tutorial
 Computer Vision and Deep Learning tutorials for the course Foundation of Digital Humanities (Fall 2019)
 
-To access previous years tutorials you can switch to branch (``v.2018``)
+To access previous years tutorials you can switch to branch ``v.2018``
 
 ## Clone or download the repository 
 * Clone : `git clone https://github.com/dhlab-epfl/fdh-tutorials.git`
@@ -25,6 +25,7 @@ Through Jupyter, open the notebook files (`.ipynb`) in the different directories
 3. Applications: 
     * CV: Face detection using Convolutional Neural Networks (CNN)
     * DL: Historical document processing - page and textline detection
+    * DL: Historical document classification
 
 If you're already familiar with some concepts, feel free to go to the next notebook.
 
