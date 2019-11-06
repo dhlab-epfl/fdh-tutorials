@@ -27,6 +27,7 @@ Inside the `computer-vision-deep-learning` folder you will find:
 3. Applications: 
     * CV: Face detection using Convolutional Neural Networks (CNN)
     * DL: Historical document processing - page and textline detection
+    * DL: Historical document classification
     
 Inside the `crf`folder you will find a CRF tutorial notebook treating how to use a CRF from annotating to predicting new text.
 
