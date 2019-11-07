@@ -19,6 +19,15 @@ To access previous years tutorials you can switch to branch ``v.2018``
 * Start a Jupyter Notebook Server: `jupyter notebook`
 * Once you're done with the exercice: `source deactivate`
 
+__Known issues__
+
+* On MacOS the ``sklearn-crfsuite`` might not get correctly installed with conda. 
+If you're having an error try installing it (in the ``fdh_tutorial`` environment) with: 
+```
+    conda install -c conda-forge python-crfsuite
+    conda env update -f environment.yml 
+```
+
 ## Run the notebooks
 Through Jupyter, open the notebook files (`.ipynb`) in the different directories of this very repository.
 
