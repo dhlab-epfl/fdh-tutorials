@@ -16,7 +16,6 @@ dependencies:
   - tensorflow=1.13
   - tqdm=4.36
   - pip:
-    - dlib==19.18
     - sklearn-crfsuite==0.3.6
     - spacy==2.2.2
     - xlrd==1.2.0

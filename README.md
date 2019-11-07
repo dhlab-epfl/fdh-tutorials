@@ -13,8 +13,9 @@ To access previous years tutorials you can switch to branch ``v.2018``
 ### With the command line
 
 * Install from yml file: `conda env create -f environment.yml`
-* Activate the environment: `source activate fdh_tutorial_cv_dl`
+* Activate the environment: `conda activate fdh_tutorial`
 * Download spacy italian model (other models can be found on [this page](https://spacy.io/usage)) `python -m spacy download it_core_news_sm`
+* (Optional) if you want to run the 3-application/cv-faces notebook, install dlib: ``pip install dlib``
 * Start a Jupyter Notebook Server: `jupyter notebook`
 * Once you're done with the exercice: `source deactivate`
 
@@ -27,6 +28,7 @@ Inside the `computer-vision-deep-learning` folder you will find:
 3. Applications: 
     * CV: Face detection using Convolutional Neural Networks (CNN)
     * DL: Historical document processing - page and textline detection
+    * DL: Historical document classification
     
 Inside the `crf`folder you will find a CRF tutorial notebook treating how to use a CRF from annotating to predicting new text.
 
