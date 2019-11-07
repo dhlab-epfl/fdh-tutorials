@@ -13,7 +13,7 @@ To access previous years tutorials you can switch to branch ``v.2018``
 ### With the command line
 
 * Install from yml file: `conda env create -f environment.yml`
-* Activate the environment: `source activate fdh_tutorial`
+* Activate the environment: `conda activate fdh_tutorial`
 * Download spacy italian model (other models can be found on [this page](https://spacy.io/usage)) `python -m spacy download it_core_news_sm`
 * (Optional) if you want to run the 3-application/cv-faces notebook, install dlib: ``pip install dlib``
 * Start a Jupyter Notebook Server: `jupyter notebook`
