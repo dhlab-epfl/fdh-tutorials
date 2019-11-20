@@ -1,0 +1,7 @@
+<http://dhclass.epfl.ch/grz-data/Paolo_Girello_%28tagliapietra%29_1620-08-07> <http://dhclass.epfl.ch/grz-terms#introduces> <http://dhclass.epfl.ch/grz-data/Paolo_Girello_%28tagliapietra%29_1620-08-07_master1> .
+<http://dhclass.epfl.ch/grz-data/Paolo_Girello_%28tagliapietra%29_1620-08-07> <http://semanticweb.cs.vu.nl/2009/11/sem/hasBeginTimeStamp> "1620-08-07T00:00:00."^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+<http://dhclass.epfl.ch/grz-data/Paolo_Girello_%28tagliapietra%29_1620-08-07> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://dhclass.epfl.ch/grz-terms#Contract> .
+<http://dhclass.epfl.ch/grz-data/Paolo_Girello_%28tagliapietra%29_1620-08-07> <http://www.w3.org/2000/01/rdf-schema#label> "Paolo Girello (tagliapietra) 1620-08-07" .
+<http://dhclass.epfl.ch/grz-data/Paolo_Girello_%28tagliapietra%29_1620-08-07_master1> <http://dhclass.epfl.ch/grz-terms#gender> "M"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://dhclass.epfl.ch/grz-data/Paolo_Girello_%28tagliapietra%29_1620-08-07_master1> <http://dhclass.epfl.ch/grz-terms#name> "Giacomo Allegri (tagliapietra)"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://dhclass.epfl.ch/grz-data/Paolo_Girello_%28tagliapietra%29_1620-08-07_master1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://dhclass.epfl.ch/grz-terms#Person> .

@@ -1,0 +1,58 @@
+@prefix dh101-data: <http://localhost:8080/dh101-garzoni-data/> .
+@prefix grz-owl: <http://localhost:8080/garzoni/ontology#> .
+@prefix dc-terms: <http://purl.org/dc/terms/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix dc-core: <http://purl.org/dc/elements/1.1/> .
+@prefix sem:   <http://semanticweb.cs.vu.nl/2009/11/sem/> .
+@prefix dh101-owl: <http://localhost:8080/dh101-garzoni-ontology#> .
+@prefix foaf:  <http://http://xmlns.com/foaf/0.1/> .
+
+<http://localhost:8080/dh101-garzoni-data/Paolo_Girello_(tagliapietra)_1620-08-07_guarantor1>
+        a                        dh101-owl:Person ;
+        dh101-owl:gender         "M"^^xsd:string ;
+        dh101-owl:introduced_in  <http://localhost:8080/dh101-garzoni-data/Paolo_Girello_(tagliapietra)_1620-08-07> ;
+        dh101-owl:name           "Antonio Cenedella (murer)"^^xsd:string ;
+        dh101-owl:role           dh101-data:GuarantorRole .
+
+<http://localhost:8080/dh101-garzoni-data/Paolo_Girello_(tagliapietra)_1620-08-07_master1>
+        a                        dh101-owl:Person ;
+        dh101-owl:gender         "M"^^xsd:string ;
+        dh101-owl:husbandOf      <http://localhost:8080/dh101-garzoni-data/Paolo_Girello_(tagliapietra)_1620-08-07_other1> ;
+        dh101-owl:introduced_in  <http://localhost:8080/dh101-garzoni-data/Paolo_Girello_(tagliapietra)_1620-08-07> ;
+        dh101-owl:name           "Giacomo Allegri (tagliapietra)"^^xsd:string ;
+        dh101-owl:role           dh101-data:MasterRole .
+
+dh101-data:  grz-owl:document  <http://localhost:8080/dh101-garzoni-data/Paolo_Girello_(tagliapietra)_1620-08-07> .
+
+<http://localhost:8080/dh101-garzoni-data/Paolo_Girello_(tagliapietra)_1620-08-07>
+        a                      dh101-owl:Contract ;
+        rdfs:label             "Paolo Girello (tagliapietra) 1620-08-07" ;
+        dh101-owl:introduces   <http://localhost:8080/dh101-garzoni-data/Paolo_Girello_(tagliapietra)_1620-08-07_master1> , <http://localhost:8080/dh101-garzoni-data/Paolo_Girello_(tagliapietra)_1620-08-07_apprentice1> , <http://localhost:8080/dh101-garzoni-data/Paolo_Girello_(tagliapietra)_1620-08-07_guarantor1> ;
+        grz-owl:reports        <http://localhost:8080/dh101-garzoni-data/Paolo_Girello_(tagliapietra)_1620-08-07#enrolment> , <http://localhost:8080/dh101-garzoni-data/Paolo_Girello_(tagliapietra)_1620-08-07#apprenticeShip> ;
+        sem:hasBeginTimeStamp  "1620-08-07T00:00:00."^^xsd:dateTime .
+
+<http://localhost:8080/dh101-garzoni-data/Paolo_Girello_(tagliapietra)_1620-08-07#enrolment>
+        a                 sem:Event ;
+        sem:eventType     grz-owl:enrolment ;
+        sem:hasTimeStamp  "1620-08-07T00:00:00."^^xsd:dateTime .
+
+<http://localhost:8080/dh101-garzoni-data/Paolo_Girello_(tagliapietra)_1620-08-07#apprenticeShip>
+        a                    sem:Event ;
+        grz-owl:duration     "P6Y"^^xsd:duration ;
+        sem:eventType        grz-owl:apprenticeShip ;
+        sem:hasEndTimeStamp  "1626-08-07T00:00:00."^^xsd:dateTime .
+
+<http://localhost:8080/dh101-garzoni-data/Paolo_Girello_(tagliapietra)_1620-08-07_other1>
+        dh101-owl:gender  "F"^^xsd:string ;
+        dh101-owl:name    "Francesca quondam Gioseffo"^^xsd:string .
+
+<http://localhost:8080/dh101-garzoni-data/Paolo_Girello_(tagliapietra)_1620-08-07_apprentice1>
+        a                        dh101-owl:Person ;
+        dh101-owl:age            "15"^^xsd:int ;
+        dh101-owl:gender         "M"^^xsd:string ;
+        dh101-owl:introduced_in  <http://localhost:8080/dh101-garzoni-data/Paolo_Girello_(tagliapietra)_1620-08-07> ;
+        dh101-owl:name           "Paolo Girello"^^xsd:string ;
+        dh101-owl:role           dh101-data:ApprenticeRole .

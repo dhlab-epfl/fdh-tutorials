@@ -1,0 +1,17 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix dh-data: <http://dhclass.epfl.ch/grz-data/> .
+@prefix dh-terms: <http://dhclass.epfl.ch/grz-terms#> .
+@prefix sem: <http://semanticweb.cs.vu.nl/2009/11/sem/> .
+
+dh-data:Paolo_Girello_(tagliapietra)_1620-08-07
+    dh-terms:introduces dh-data:Paolo_Girello_(tagliapietra)_1620-08-07_master1 ;
+    sem:hasBeginTimeStamp "1620-08-07T00:00:00."^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
+    a dh-terms:Contract ;
+    rdfs:label "Paolo Girello (tagliapietra) 1620-08-07" .
+
+dh-data:Paolo_Girello_(tagliapietra)_1620-08-07_master1
+    dh-terms:gender "M"^^<http://www.w3.org/2001/XMLSchema#string> ;
+    dh-terms:name "Giacomo Allegri (tagliapietra)"^^<http://www.w3.org/2001/XMLSchema#string> ;
+    a dh-terms:Person .
+

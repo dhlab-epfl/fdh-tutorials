@@ -1,0 +1,256 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.dh101/garzoni/ontology#"
+     xml:base="http://www.dh101/garzoni/ontology"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
+    <owl:Ontology rdf:about="http://localhost:8080/dh101-garzoni-ontology">
+        <owl:versionInfo rdf:datatype="http://www.w3.org/2001/XMLSchema#float">1.0</owl:versionInfo>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A small ontology that describes Garzoni data.</rdfs:comment>
+    </owl:Ontology>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://localhost:8080/dh101-garzoni-ontology#document -->
+
+    <owl:ObjectProperty rdf:about="http://localhost:8080/dh101-garzoni-ontology#document">
+        <rdfs:range rdf:resource="http://localhost:8080/dh101-garzoni-ontology#Contract"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://localhost:8080/dh101-garzoni-ontology#event -->
+
+    <owl:ObjectProperty rdf:about="http://localhost:8080/dh101-garzoni-ontology#event"/>
+    
+
+
+    <!-- http://localhost:8080/dh101-garzoni-ontology#eventType -->
+
+    <owl:ObjectProperty rdf:about="http://localhost:8080/dh101-garzoni-ontology#eventType">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://localhost:8080/dh101-garzoni-ontology#guarantorOf -->
+
+    <owl:ObjectProperty rdf:about="http://localhost:8080/dh101-garzoni-ontology#guarantorOf">
+        <rdfs:domain rdf:resource="http://localhost:8080/dh101-garzoni-ontology#Person"/>
+        <rdfs:range rdf:resource="http://localhost:8080/dh101-garzoni-ontology#Person"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://localhost:8080/dh101-garzoni-ontology#husbandOf -->
+
+    <owl:ObjectProperty rdf:about="http://localhost:8080/dh101-garzoni-ontology#husbandOf">
+        <owl:inverseOf rdf:resource="http://localhost:8080/dh101-garzoni-ontology#spouseOf"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#InverseFunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://localhost:8080/dh101-garzoni-ontology#Person"/>
+        <rdfs:range rdf:resource="http://localhost:8080/dh101-garzoni-ontology#Person"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://localhost:8080/dh101-garzoni-ontology#masterOf -->
+
+    <owl:ObjectProperty rdf:about="http://localhost:8080/dh101-garzoni-ontology#masterOf">
+        <rdfs:domain rdf:resource="http://localhost:8080/dh101-garzoni-ontology#Person"/>
+        <rdfs:range rdf:resource="http://localhost:8080/dh101-garzoni-ontology#Person"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://localhost:8080/dh101-garzoni-ontology#residence -->
+
+    <owl:ObjectProperty rdf:about="http://localhost:8080/dh101-garzoni-ontology#residence">
+        <rdfs:domain rdf:resource="http://localhost:8080/dh101-garzoni-ontology#Person"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://localhost:8080/dh101-garzoni-ontology#role -->
+
+    <owl:ObjectProperty rdf:about="http://localhost:8080/dh101-garzoni-ontology#role">
+        <rdfs:domain rdf:resource="http://localhost:8080/dh101-garzoni-ontology#Person"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://localhost:8080/dh101-garzoni-ontology#roleType -->
+
+    <owl:ObjectProperty rdf:about="http://localhost:8080/dh101-garzoni-ontology#roleType"/>
+    
+
+
+    <!-- http://localhost:8080/dh101-garzoni-ontology#spouseOf -->
+
+    <owl:ObjectProperty rdf:about="http://localhost:8080/dh101-garzoni-ontology#spouseOf">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#InverseFunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://localhost:8080/dh101-garzoni-ontology#Person"/>
+        <rdfs:range rdf:resource="http://localhost:8080/dh101-garzoni-ontology#Person"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://localhost:8080/dh101-garzoni-ontology#age -->
+
+    <owl:DatatypeProperty rdf:about="http://localhost:8080/dh101-garzoni-ontology#age">
+        <rdfs:domain rdf:resource="http://localhost:8080/dh101-garzoni-ontology#Person"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://localhost:8080/dh101-garzoni-ontology#name -->
+
+    <owl:DatatypeProperty rdf:about="http://localhost:8080/dh101-garzoni-ontology#name">
+        <rdfs:domain rdf:resource="http://localhost:8080/dh101-garzoni-ontology#Person"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://localhost:8080/dh101-garzoni-ontology#Contract -->
+
+    <owl:Class rdf:about="http://localhost:8080/dh101-garzoni-ontology#Contract">
+        <rdfs:subClassOf rdf:resource="http://localhost:8080/dh101-garzoni-ontology#Document"/>
+    </owl:Class>
+    
+
+
+    <!-- http://localhost:8080/dh101-garzoni-ontology#Document -->
+
+    <owl:Class rdf:about="http://localhost:8080/dh101-garzoni-ontology#Document"/>
+    
+
+
+    <!-- http://localhost:8080/dh101-garzoni-ontology#Event -->
+
+    <owl:Class rdf:about="http://localhost:8080/dh101-garzoni-ontology#Event"/>
+    
+
+
+    <!-- http://localhost:8080/dh101-garzoni-ontology#EventType -->
+
+    <owl:Class rdf:about="http://localhost:8080/dh101-garzoni-ontology#EventType">
+        <rdfs:subClassOf rdf:resource="http://localhost:8080/dh101-garzoni-ontology#Type"/>
+    </owl:Class>
+    
+
+
+    <!-- http://localhost:8080/dh101-garzoni-ontology#Person -->
+
+    <owl:Class rdf:about="http://localhost:8080/dh101-garzoni-ontology#Person"/>
+    
+
+
+    <!-- http://localhost:8080/dh101-garzoni-ontology#Role -->
+
+    <owl:Class rdf:about="http://localhost:8080/dh101-garzoni-ontology#Role"/>
+    
+
+
+    <!-- http://localhost:8080/dh101-garzoni-ontology#RoleType -->
+
+    <owl:Class rdf:about="http://localhost:8080/dh101-garzoni-ontology#RoleType">
+        <rdfs:subClassOf rdf:resource="http://localhost:8080/dh101-garzoni-ontology#Type"/>
+    </owl:Class>
+    
+
+
+    <!-- http://localhost:8080/dh101-garzoni-ontology#Type -->
+
+    <owl:Class rdf:about="http://localhost:8080/dh101-garzoni-ontology#Type"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://localhost:8080/dh101-garzoni-ontology#apprentice -->
+
+    <owl:NamedIndividual rdf:about="http://localhost:8080/dh101-garzoni-ontology#apprentice">
+        <rdf:type rdf:resource="http://localhost:8080/dh101-garzoni-ontology#RoleType"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://localhost:8080/dh101-garzoni-ontology#apprenticeship -->
+
+    <owl:NamedIndividual rdf:about="http://localhost:8080/dh101-garzoni-ontology#apprenticeship">
+        <rdf:type rdf:resource="http://localhost:8080/dh101-garzoni-ontology#EventType"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://localhost:8080/dh101-garzoni-ontology#enrolment -->
+
+    <owl:NamedIndividual rdf:about="http://localhost:8080/dh101-garzoni-ontology#enrolment">
+        <rdf:type rdf:resource="http://localhost:8080/dh101-garzoni-ontology#EventType"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://localhost:8080/dh101-garzoni-ontology#guarantor -->
+
+    <owl:NamedIndividual rdf:about="http://localhost:8080/dh101-garzoni-ontology#guarantor">
+        <rdf:type rdf:resource="http://localhost:8080/dh101-garzoni-ontology#RoleType"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://localhost:8080/dh101-garzoni-ontology#master -->
+
+    <owl:NamedIndividual rdf:about="http://localhost:8080/dh101-garzoni-ontology#master">
+        <rdf:type rdf:resource="http://localhost:8080/dh101-garzoni-ontology#RoleType"/>
+    </owl:NamedIndividual>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.2.6.20160910-2108) https://github.com/owlcs/owlapi -->
+

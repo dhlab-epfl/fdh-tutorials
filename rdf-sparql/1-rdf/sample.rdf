@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rdf:RDF xmlns:dh-data="http://dhclass.epfl.ch/grz-data/" xmlns:dh-terms="http://dhclass.epfl.ch/grz-terms#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" xmlns:sem="http://semanticweb.cs.vu.nl/2009/11/sem/">
+  <rdf:Description rdf:about="http://dhclass.epfl.ch/grz-data/Paolo_Girello_%28tagliapietra%29_1620-08-07">
+    <dh-terms:introduces rdf:resource="http://dhclass.epfl.ch/grz-data/Paolo_Girello_%28tagliapietra%29_1620-08-07_master1"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://dhclass.epfl.ch/grz-data/Paolo_Girello_%28tagliapietra%29_1620-08-07">
+    <sem:hasBeginTimeStamp rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">1620-08-07T00:00:00.</sem:hasBeginTimeStamp>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://dhclass.epfl.ch/grz-data/Paolo_Girello_%28tagliapietra%29_1620-08-07">
+    <rdf:type rdf:resource="http://dhclass.epfl.ch/grz-terms#Contract"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://dhclass.epfl.ch/grz-data/Paolo_Girello_%28tagliapietra%29_1620-08-07">
+    <rdfs:label>Paolo Girello (tagliapietra) 1620-08-07</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://dhclass.epfl.ch/grz-data/Paolo_Girello_%28tagliapietra%29_1620-08-07_master1">
+    <dh-terms:gender rdf:datatype="http://www.w3.org/2001/XMLSchema#string">M</dh-terms:gender>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://dhclass.epfl.ch/grz-data/Paolo_Girello_%28tagliapietra%29_1620-08-07_master1">
+    <dh-terms:name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Giacomo Allegri (tagliapietra)</dh-terms:name>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://dhclass.epfl.ch/grz-data/Paolo_Girello_%28tagliapietra%29_1620-08-07_master1">
+    <rdf:type rdf:resource="http://dhclass.epfl.ch/grz-terms#Person"/>
+  </rdf:Description>
+</rdf:RDF>

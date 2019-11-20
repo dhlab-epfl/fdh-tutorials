@@ -1,0 +1,42 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix dh101-data: <http://localhost:8080/dh101-garzoni-data/> .
+@prefix dh101-owl: <http://localhost:8080/dh101-garzoni-ontology#> .
+@prefix sem: <http://semanticweb.cs.vu.nl/2009/11/sem/> .
+@prefix foaf: <http://http://xmlns.com/foaf/0.1/> .
+
+
+[rule1_prof_relation:  
+(?c dh101-owl:introduces ?a),
+(?a dh101-owl:role dh101-data:ApprenticeRole), 
+(?c dh101-owl:introduces ?m), 
+(?m dh101-owl:role dh101-data:MasterRole) 
+-> (?m dh101-owl:masterOf ?a)
+]
+
+[rule2_prof_relation:  
+(?c dh101-owl:introduces ?a),
+(?a dh101-owl:role dh101-data:ApprenticeRole), 
+(?c dh101-owl:introduces ?g), 
+(?g dh101-owl:role dh101-data:GuarantorRole) 
+-> (?g dh101-owl:guarantorOf ?a)
+]
+
+[rule2_basic_relation:  
+(?c dh101-owl:introduces ?a),
+(?c dh101-owl:introduces ?m), 
+(?c dh101-owl:introduces ?g), 
+(?a dh101-owl:role dh101-data:ApprenticeRole), 
+(?g dh101-owl:role dh101-data:GuarantorRole) 
+(?m dh101-owl:role dh101-data:MasterRole) 
+-> 
+(?g foaf:knows ?a),
+(?g foaf:knows ?m),
+(?m foaf:knows ?a)
+]
+
+
+[rule_relation_symmetry:
+(?p1 foaf:knows ?p2)
+->
+(?p2 foaf:knows ?p1)
+]
