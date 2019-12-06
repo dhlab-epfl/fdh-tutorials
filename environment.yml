@@ -20,4 +20,5 @@ dependencies:
     - spacy==2.2.2
     - xlrd==1.2.0
     - xlsxwriter==1.2.2
+    - gdal2tiles==0.1.5
 
